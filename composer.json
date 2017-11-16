@@ -1,0 +1,27 @@
+{
+    "name": "binarycabin/laravel-branding",
+    "description": "Simple integration for basic dynamic branding. Useful for white-labeling apps",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeff Kilroy",
+            "email": "jeff@binarycabin.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "BinaryCabin\\LaravelBranding\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BinaryCabin\\LaravelBranding\\Providers\\LaravelBrandingServiceProvider"
+            ],
+            "aliases": {
+                "Branding": "BinaryCabin\\LaravelBranding\\Facades\\Branding"
+            }
+        }
+    }
+}
